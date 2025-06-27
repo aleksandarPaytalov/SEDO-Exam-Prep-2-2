@@ -32,5 +32,5 @@ jobs:
         
     - name: Run Integration Tests
       if: github.ref == 'refs/heads/staging'
-      run: dotnet test **/*IntegrationTests.csproj --no-build --verbosity normal
+      run: dotnet test **/*Tests.csproj --no-build --verbosity normal
 
