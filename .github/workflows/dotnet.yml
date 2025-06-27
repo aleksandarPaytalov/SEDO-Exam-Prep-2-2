@@ -21,10 +21,10 @@ jobs:
         dotnet-version: 6.0.x
 
     - name: Restore dependencies
-      run: dotnet restore Homies.sln
+      run: dotnet restore
 
     - name: Build solution
-      run: dotnet build Homies.sln --no-restore
+      run: dotnet build --no-restore
 
     - name: Run Unit Tests
       if: github.ref == 'refs/heads/develop'
