@@ -34,6 +34,6 @@ jobs:
       run: dotnet test **/*UnitTests.csproj --no-build --verbosity normal
         
     - name: Run Integration Tests
-      if: github.ref == 'refs/heads/staging'
+      if: github.ref == 'refs/heads/feature'
       run: dotnet test **/HouseRentingSystem.Tests.csproj --no-build --verbosity normal
 
